@@ -1,0 +1,66 @@
+.locations {
+	@include parallax;
+	background-image: url(../images/restaurant-bg.jpg);
+
+	
+	
+	article {
+		@include light;
+		width: 90%;
+		margin: auto;
+		@include breakpoint(tablet) {
+			width: 85%;
+		}
+
+		@include breakpoint(laptop) {
+			width: 65%;
+  			margin-left: 5%;
+		 }
+
+		 @include breakpoint(huge) {
+			width: 45%;
+  			margin-left: 8%;
+		 }
+
+	}
+
+	.location {
+		width: 100%;
+		padding:27px 0;
+		margin-left: 4%;
+		display: inline-flex;
+		flex-direction: row;
+		@include breakpoint(tablet){
+			width: 45%;
+			
+		}
+	}
+	
+	img {
+		width:32px;
+		margin-right: 10px;
+	}
+
+
+
+	li {
+		font-family: 'Crimson Text',Georgia,"Times New Roman",serif;
+		list-style-type: none;
+		font-size: 18px;
+		line-height: 1.7em;
+		color: #222222;
+	}
+
+	h4 {
+		color: $redHeading;
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;   
+		font-size:22px;
+		margin-right:10%;
+		margin-bottom: 10px;
+		
+	}
+	
+
+	
+
+}

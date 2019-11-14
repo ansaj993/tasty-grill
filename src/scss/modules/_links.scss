@@ -1,0 +1,13 @@
+a {
+		text-decoration:none;
+		color:#fff;
+		font-size:20px;
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+		font-weight: 700;
+		padding:  22px;
+		display: flex;
+		justify-content: space-evenly;
+		@include breakpoint(tablet){
+			padding: 29px 22px;
+		}
+	}

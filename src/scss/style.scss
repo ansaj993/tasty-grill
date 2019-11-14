@@ -1,0 +1,54 @@
+@import 'abstract/variables';
+@import 'abstract/mixins';
+
+@import 'modules/responsive';
+
+@import 'base/typography';
+
+
+@import 'modules/nav';
+@import 'modules/btn';
+@import 'modules/pizza';
+@import 'modules/form';
+@import 'modules/links';
+
+@import 'layouts/header';
+@import 'layouts/ingredients';
+@import 'layouts/specials';
+@import 'layouts/menu';
+@import 'layouts/chiefs';
+@import 'layouts/locations';
+@import 'layouts/reserve';
+
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+
+
+
+section {
+	padding: 81px 0;
+}
+
+.ingredients, .chiefs {
+	@include wrapper
+}
+
+.menu1, .menu2, .menu3, .reserve {
+	h2 {
+		color:white;
+		&::after {
+			border-color:white;
+		}
+	}
+}
+
+
+
+
+
+

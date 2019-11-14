@@ -1,0 +1,55 @@
+.header {
+	@include parallax;
+	background-image: url("../images/burger-bg.jpg");
+	padding-top:10%;
+
+	&__content {
+	margin: 20px auto;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	padding-bottom: 10%;
+	
+
+		img {
+			width: 100%;
+			margin:50px auto;
+			
+				
+			@include breakpoint(mobile_landscape){
+				width: 50%;
+			}
+
+
+			@include breakpoint(desktop_min){
+				max-width: 500px;
+			
+			}
+	}
+
+
+
+
+	p {
+		padding: 10px 0 20px;
+		font-size:24px;
+		@include breakpoint(tablet){
+			font-size:28px;
+		}
+	}
+
+	
+}
+
+&__arrow{
+	width:35px;
+	height: 35px;
+	display: flex;
+	align-items: flex-end;
+	margin:auto;
+img {
+	width:35px;
+	
+	}
+}
+}

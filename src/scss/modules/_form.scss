@@ -1,0 +1,42 @@
+//form in reserve section//
+
+form {
+		@include clearfix;
+		width:90%;
+		margin:auto;
+		padding-bottom:54px;
+		button {
+			float:right;
+		}
+		@include breakpoint(tablet){
+			width: 65%;
+		}
+		@include breakpoint(huge){
+			width: 35%;
+		}
+	}
+
+
+	input, select {
+		background-color:white;
+		color:black;
+		font-size: $paragraphSize;
+		font-family: 'Crimson Text',Georgia,"Times New Roman",serif;	
+		margin-bottom: 3%;	
+		padding: 16px;
+		width:100%;
+		&::placeholder {
+			color:#000;
+		}
+	}
+
+	.half {
+		width: 100%;
+		display: inline-block;
+		&:nth-child(even) {
+			margin-right:4px;
+		}
+		@include breakpoint(tablet){
+			width: 49%;
+		}
+	}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,500,500,i700,700i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,700,700i');
+
+
+h1 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size:28px;
+    @include breakpoint(tablet){
+        font-size:32px;
+    }
+}
+
+h2 {
+    font: {
+        family: 'Montserrat', Arial, Helvetica, sans-serif;   
+        weight: 700;
+        size: 40px;
+    }
+    text-align:center;
+    color: $redHeading;
+    margin-bottom:10px;
+    @include breakpoint(desktop_min){
+        font-size:60px;
+    }
+    .meal & {
+        color: #fff;
+    }
+
+    &:after {
+        content:"";
+        display: block;
+        border-bottom:1px solid #222222;
+        width:100px;
+        height: 12px;
+        margin: auto;
+        margin-bottom:20px;
+    }
+}
+
+h3 {
+    font: {
+        family: 'Crimson Text',Georgia,"Times New Roman",serif;
+        weight: 700;
+        style: italic;
+        size:30px;
+    }
+
+    padding: 60px 10px;
+    color: white;
+    text-align:center;
+    @include darker;
+    @include breakpoint(tablet){
+        padding: 30px 10px;
+    }
+ 
+    @include breakpoint(huge){
+        font-size:35px;
+        padding: 60px 20px;
+    }
+}
+
+h5 {
+    font: {
+        family: 'Crimson Text',Georgia,"Times New Roman",serif;
+        weight: 400;
+        style:italic;
+        size:24px;
+    }
+
+    text-align:center;
+    padding-bottom:54px;
+   
+}
+
+p {
+    font-family: 'Crimson Text',Georgia,"Times New Roman",serif;
+    text-align: center;
+    font-size:18px;
+}
+
+span {
+    font-family: 'Crimson Text',Georgia,"Times New Roman",serif;
+    font-size:18px;
+    color:$redSpan;
+    display: block;
+}
+

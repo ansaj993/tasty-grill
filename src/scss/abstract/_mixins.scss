@@ -1,0 +1,76 @@
+@mixin parallax {
+    background: {
+        attachment: fixed;
+        repeat: no-repeat;
+        position: top;
+        size: cover;
+ } 
+}
+
+@mixin wrapper {
+        &__content {
+        width:90%;
+        margin: auto;
+        @include breakpoint(huge){
+            width:80%;
+            }
+    }
+}
+@mixin menuTable {
+        border-top: 5px solid #b41500;
+        box-shadow: 0px 35px 40px -40px rgba(0,0,0,0.8);
+        padding:30px 40px;
+        @include breakpoint(tablet) {
+            padding:30px 20px;
+        }
+}
+
+@mixin darker {
+    @include menuTable;       
+    background-color: rgba(0,0,0,0.66);
+}
+
+ @mixin dark {
+    @include menuTable;
+    background-color: rgba(0,0,0,0.64);          
+}
+
+
+@mixin light {
+    @include menuTable;
+    background-color: rgba(255,255,255,0.94);
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display:block;
+        visibility: hidden;
+        clear: both;
+    }
+}
+
+
+
+@mixin bg {
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    @include breakpoint(desktop_min){
+        padding: 20px;
+    }
+    @include breakpoint(huge){
+        padding: 40px;
+    }
+}
+
+@mixin pizzaImg {
+        width: 120px;
+        float: left;
+        margin-right:15px;
+        margin-bottom:15px;
+        }
+
+
+
+

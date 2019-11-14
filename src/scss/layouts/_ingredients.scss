@@ -1,0 +1,47 @@
+.ingredients {
+	@include clearfix;
+
+	background-image: url(../images/tomato-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center;
+		
+		p {
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			font-weight: 400;
+			text-align: left;
+			padding-top:10px;
+			line-height: 1.8em;
+			@include breakpoint (desktop_min){
+				padding: 0 30px 27px;
+				width: 50%;
+				float: left;
+			}
+			}
+
+		
+		&__signature {
+			width: 70%;
+			margin:auto;
+			padding:27px 0;
+			img {
+				width:100%;
+			}
+			@include breakpoint(mobile_landscape){
+				width:55%;
+			}
+			@include breakpoint(tablet){
+				width:300px;
+			}
+		}
+
+		.drop {
+			float: left;
+			font-size:96px;
+			font-family:'Crimson Text',Georgia,"Times New Roman",serif;
+			line-height: 70%;
+			padding:8px 5px 0 0;
+			color:#222;
+		}
+
+}

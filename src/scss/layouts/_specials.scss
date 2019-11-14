@@ -1,0 +1,59 @@
+.specials {
+	background-image: $backgroundWhite;
+	
+	&__wrap {
+		width:90%;
+		margin:15px auto;
+		border:1px solid #b41500;
+		@include bg;
+
+		@include breakpoint(mobile_landscape){
+			width:50%;
+			float: left;
+			border:0.5px solid #b41500;
+			margin:0;
+		}
+		@include breakpoint(desktop_min){
+			width:25%;
+			float: left;
+			margin:0;
+			border:none;
+		}
+	}
+
+	&--jambalaya {
+		background-image: url(../images/shrimp-rice.jpg);
+
+	}
+
+	&--tomato {
+		background-image: url(../images/pizza.jpg);
+	}
+
+	&--turkey {
+		background-image: url(../images/sandwich.jpg);
+	}
+
+	&--chili {
+		background-image: url(../images/chili.jpg);
+	}
+
+	&__description {
+		background-color: white;
+		font: {
+			family: 'Montserrat', Arial, Helvetica, sans-serif;
+			weight: 500;
+			size:15px;
+			}
+		line-height: 1.7em;
+		padding:15px;		
+	}
+	
+	&__footnote {
+		max-width: 400px;
+		margin: auto;
+		padding-top:54px;
+		line-height: 1.4em;
+		clear: both;
+	}
+}

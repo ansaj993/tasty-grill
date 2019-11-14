@@ -1,0 +1,128 @@
+.menu1, .menu2, .menu3 {
+	@include parallax;
+	color:white;
+
+	article {
+		@include dark;
+	}
+
+}
+
+
+.menu1 {
+	background-image: url(../images/burger-side.jpg);
+
+	
+	article {
+		width:85%;
+		margin: auto;
+		padding:50px 40px;
+
+		img {
+			@include breakpoint(tablet){
+                @include pizzaImg;
+                }
+		}
+
+		h4,p,span {
+            padding:0;
+            @include breakpoint(tablet){
+                text-align: left;
+            }
+        }
+	
+		@include breakpoint(desktop_min){
+			width:65%;
+			float:right;
+			margin-right: 5%;
+		}
+
+		@include breakpoint(huge){
+			width: 45%;
+			margin-right: 10%;
+			float:right;
+		}
+
+	}
+
+	@include clearfix;
+
+}
+
+
+.menu2 {
+	background-image: url(../images/burger-side2.jpg);
+	
+	article {
+		width:90%;
+		margin:0 auto 20px;
+
+		
+		@include breakpoint(tablet){
+			width:46%;
+			float: left;
+			margin-left:3%;
+		}
+
+
+		img {
+			@include breakpoint(desktop_min){
+				@include pizzaImg;
+			}
+		}
+
+	
+
+		@include breakpoint(huge){
+			width:40%;
+			margin-left:7%;
+				&:last-child {
+					margin-left: 5.5%;
+				}
+		}	
+	}
+
+	@include clearfix;
+
+}
+
+.menu3 {
+	background-image: url(../images/burger-bg.jpg);
+	
+	article {
+		width:90%;
+		margin: 30px auto;
+	
+
+		@include breakpoint(tablet){
+			width:32%;
+			float: left;
+			margin-left:1%;
+		}
+
+		@include breakpoint(huge){
+			width:29%;
+			margin-left:3%;
+				&:last-child {
+					margin-right:3%;
+		}
+		
+	h4,p,span {
+		text-align:center;
+		@include breakpoint(huge){
+			text-align: left;
+		}
+	}
+
+		img {
+			@include breakpoint(huge){
+				@include pizzaImg;
+		}
+	}
+}
+	
+	
+
+}
+@include clearfix;
+}

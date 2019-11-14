@@ -1,0 +1,51 @@
+//navigation menu//
+
+.nav {
+	position: relative;
+	text-align: center;
+	background-image: url("../images/food2.png");
+	
+
+	&__icon {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-end;
+		padding:20px 30px;
+			div {
+				border-bottom:3px solid white;
+				height:10px;
+				width:30px;
+			}
+
+		@include breakpoint(tablet) {
+			display: none;
+		}
+	}
+
+	&__block {
+		display: none;
+		@include breakpoint(tablet){
+			display: block;
+		}
+	
+
+	ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		@include breakpoint(tablet) {
+			flex-direction: row;
+		}
+	}
+
+
+
+	li {
+		list-style-type: none;
+	}
+}
+
+	
+}
